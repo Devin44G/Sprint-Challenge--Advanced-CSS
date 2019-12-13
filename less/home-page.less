@@ -16,6 +16,7 @@
 
     .header-img img {
       max-width: 100%;
+      padding-top: 12rem;
     }
 
   }
@@ -30,6 +31,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      &:hover {
+        animation: anim 3s 1;
+      }
     }
 
     // Media Queries
@@ -89,6 +94,7 @@
 
       .btn {
         .btnStyle();
+        position: relative;
 
         &:hover {
           .btnHover();
@@ -110,7 +116,23 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        &:hover {
+          animation: anim 3s 1;
+        }
       }
     }
   }
 }// home
+
+// Base Media Queries
+@media @phone {
+  html {
+    font-size: 55%;
+  }
+}
+
+// Keyframes
+@keyframes anim {
+  .borderAnim;
+}

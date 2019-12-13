@@ -1,5 +1,5 @@
 // Mixins Here
-.btnStyle(@fontSize: 1.5rem, @fontColor: @porcelain, @bgColor: @btn-bg-color) {
+.btnStyle(@fontSize: 1.5rem, @fontColor: @wild-sand, @bgColor: @btn-bg-color) {
   font-size: @fontSize;
   color: @fontColor;
   background-color: @bgColor;
@@ -13,8 +13,13 @@
     width: 100%;
   }
 }
-.btnHover(@hover-btn-color: @btn-bg-color, @hover-btn-bg: @porcelain) {
+.btnHover(@hover-btn-color: @btn-bg-color, @hover-btn-bg: @wild-sand) {
   color: @hover-btn-color;
   background-color: @hover-btn-bg;
   cursor: pointer;
+}
+.borderAnim() {
+  30% { border-radius: 70px; }
+  50% { border-radius: 70px; }
+  80% { border-radius: 20px; }
 }
