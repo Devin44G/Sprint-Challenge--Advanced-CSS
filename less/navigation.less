@@ -1,1 +1,28 @@
 // Navigation code here
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(@nav-bg, .7);
+  border-bottom: solid 2px @nav-border;
+
+  .nav {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: @nav-font;
+
+      &:hover {
+        color: lighten(@nav-font, 35%);
+      }
+    }
+  }
+}
